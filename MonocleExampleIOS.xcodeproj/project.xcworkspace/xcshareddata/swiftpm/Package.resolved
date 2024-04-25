@@ -1,0 +1,15 @@
+{
+  "originHash" : "c1c7ecd387847c0228ba373fbe8b384a01fc01528d2021266420a8fbc0d680e7",
+  "pins" : [
+    {
+      "identity" : "monocle-sdk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/spurintel/monocle-sdk-ios",
+      "state" : {
+        "branch" : "main",
+        "revision" : "8ea6ef5ff86bbea5bbabf9a0cc431dd502052aab"
+      }
+    }
+  ],
+  "version" : 3
+}
