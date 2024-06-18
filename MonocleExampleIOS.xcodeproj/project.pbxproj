@@ -22,6 +22,7 @@
 		03B299562BDAB1D90094E864 /* MonocleExampleIOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MonocleExampleIOS.entitlements; sourceTree = "<group>"; };
 		03B299582BDAB1D90094E864 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		03B299622BDAB4380094E864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		04E664AB2C20F4280035F7FF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +40,7 @@
 		03B299442BDAB1D80094E864 = {
 			isa = PBXGroup;
 			children = (
+				04E664AB2C20F4280035F7FF /* README.md */,
 				03B2994F2BDAB1D80094E864 /* MonocleExampleIOS */,
 				03B2994E2BDAB1D80094E864 /* Products */,
 			);
@@ -104,7 +106,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
-				LastUpgradeCheck = 1530;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					03B2994C2BDAB1D80094E864 = {
 						CreatedOnToolsVersion = 15.3;
@@ -191,6 +193,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -252,6 +255,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -279,6 +283,7 @@
 				CODE_SIGN_ENTITLEMENTS = MonocleExampleIOS/MonocleExampleIOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MonocleExampleIOS/Preview Content\"";
 				DEVELOPMENT_TEAM = Q844P3495X;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -319,6 +324,7 @@
 				CODE_SIGN_ENTITLEMENTS = MonocleExampleIOS/MonocleExampleIOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MonocleExampleIOS/Preview Content\"";
 				DEVELOPMENT_TEAM = Q844P3495X;
 				ENABLE_HARDENED_RUNTIME = YES;
