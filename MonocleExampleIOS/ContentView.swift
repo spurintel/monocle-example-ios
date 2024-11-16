@@ -9,14 +9,14 @@ struct ContentView: View {
     @State private var decryptionError: String?
     @State private var isLoading: Bool = false
     @State private var showDetails: Bool = false
-    
+
     func formattedDate(_ date: Date) -> String {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
         formatter.timeStyle = .medium
         return formatter.string(from: date)
     }
-    
+
     var body: some View {
         VStack {
             Spacer()
@@ -44,20 +44,10 @@ struct ContentView: View {
             .padding(.horizontal)
             .padding(.bottom, showDetails ? 20 : 0)
             
-            // Encrypted and Decrypted Assessment Display
+            // Decrypted and Encrypted Assessment Display
             if showDetails {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 20) {
-                        // Encrypted Assessment
-                        Group {
-                            Text("Encrypted Assessment:")
-                                .bold()
-                            Text(encryptedAssessment)
-                                .padding()
-                                .background(Color(UIColor.secondarySystemBackground))
-                                .cornerRadius(8)
-                        }
-                        
                         // Decrypted Assessment or Decryption Error
                         if let decryptedAssessment = decryptedAssessment {
                             // Decrypted Data Display
@@ -117,6 +107,16 @@ struct ContentView: View {
                             // Decryption Not Available
                             Text("Decrypted data not available.")
                                 .italic()
+                        }
+                        
+                        // Encrypted Assessment
+                        Group {
+                            Text("Encrypted Assessment:")
+                                .bold()
+                            Text(encryptedAssessment)
+                                .padding()
+                                .background(Color(UIColor.secondarySystemBackground))
+                                .cornerRadius(8)
                         }
                     }
                     .padding(.horizontal)
